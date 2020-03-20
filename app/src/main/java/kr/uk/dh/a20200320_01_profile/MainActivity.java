@@ -10,6 +10,8 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 
+import com.bumptech.glide.Glide;
+
 import kr.uk.dh.a20200320_01_profile.databinding.ActivityMainBinding;
 
 public class MainActivity extends BaseActivity {
@@ -71,6 +73,8 @@ public class MainActivity extends BaseActivity {
                if (data.getData() != null) {
                    Log.d("사진가져오기",data.getDataString().toString());
 //                   제대로 작동 안함 ㅋㅋㅋ
+                   Glide.with(mContext).load(data.getData()).into(binding.profileImg);
+//                   Glide.with(mContext).load(R.layout.support_simple_spinner_dropdown_item ).into(binding.profileImg);
                }
             }
         }

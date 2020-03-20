@@ -22,9 +22,10 @@
                 >
 <!--화면이 네모 ?-->
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/what_aps"
+                    android:src="@mipmap/ic_launcher_round"
                     app:civ_border_color="#000000"
                     app:civ_border_width="2dp" />
 
@@ -104,6 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="수정"
+                android:background="@drawable/white_border_button"
                 android:layout_gravity="right"/>
 <!--한칸에 버튼 넣을시 FrameLayout.  -->
         </FrameLayout>
